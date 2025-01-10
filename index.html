@@ -4,23 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+  />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Cutive&family=Dancing+Script:wght@700&family=Chivo:ital,wght@0,900;1,900&family=Roboto&family=Chewy&family=Sriracha&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
     />
-    <title>Naomi Meseret --Software Enginner</title>
+    
+
+  <title>Naomi Meseret -Software Enginner</title>
   </head>
   <body>
     <header>
-      <figure class="site-logo">
-        <a href="index.html"
-          ><img
-            src="images/logo.jpeg"
-            alt=" Naomi Meseret Logo"
-            width="50"
-            class="logo"
-        /></a>
-      </figure>
-      <h1 class="title-name">Naomi Meseret</h1>
+      <div>
+        <figure class="site-logo">
+          <a href="index.html"
+            ><img
+              src="images/logo.jpeg"
+              alt=" Naomi Meseret Logo"
+              width="50"
+              class="logo"
+          /></a>
+        </figure>
+        <p class="title-name"><span class="orange-word">N</span>aomi Meseret</p>
+      </div>
       <button class="nav-toggle">
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -46,7 +55,10 @@
     </header>
     <main>
       <section class="home-section">
-        <h2 class="home-title">Hi, I am Naomi</h2>
+        <div class="home-text">
+        <h1 class="home-title">
+          <span class="orange-word">Hi,</span> I am Naomi
+        </h1>
         <article class="home-content">
           <h4 class="sub-title">Software Engineering Enthusiast</h4>
           <p class="home-description">
@@ -62,10 +74,11 @@
             Download Resume
           </a>
         </article>
+      </div>
         <figure class="home-image-wrapper">
           <img
             src="images/home_img1.webp"
-            width="200"
+            
             alt="A girl coding in a modern workspace."
           />
         </figure>
@@ -74,7 +87,7 @@
 
     <footer>
       <section class="footer-section">
-        <h5 class="social-heading">Connect with me:</h5>
+        <h5 class="social-heading">Connect with me</h5>
         <nav class="social-links">
           <ul>
             <li>
@@ -102,11 +115,13 @@
           </ul>
         </nav>
         <div class="footer-text">
-          <p>&copy;2024</p>
-          <p>All rights reserved.</p>
-          <p>Fueled by passion, Guided by love.</p>
+          
+          <p>&copy;2024 All rights reserved.</p>
+        
+          <p class="quote">Fueled by passion, Guided by love.</p>
         </div>
       </section>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

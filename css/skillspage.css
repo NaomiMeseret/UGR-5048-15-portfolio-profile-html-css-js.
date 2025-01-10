@@ -1,0 +1,610 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #303030;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+  }
+  /* Header Styling */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #212121;
+    color: #fff;
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    z-index: 1000;
+  
+  }
+  .orange-word {
+    color: #ef741b;
+  }
+  .site-logo,
+  .title-name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .site-logo {
+    margin-right: 5px;
+  }
+  .site-logo img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .title-name {
+    font-size: 24px;
+    font-family: "Dancing Script", cursive;
+  
+  }
+  .nav-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 30%;
+    background-color: #212121;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .nav-container.active {
+    right: 0;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .nav-list-item {
+    margin: 25px 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #ef741b;
+    text-decoration: underline;
+  }
+  
+  .nav-toggle.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2000;
+  }
+  /* Main Styling*/
+  main {
+    flex: 1;
+    padding: 10px 30px; 
+    margin-top: 80px;
+}
+  .skills-section {
+      display: grid;
+      gap: 20px;
+  }
+    .page-title {
+      font-size: 32px;
+      font-weight: 900;
+      font-family: Chivo;
+      color: #ffffff;
+      text-align: center;
+      }
+    .skill-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      align-items: start;
+     padding: 10px ;
+    }
+  .skill-title {
+      font-family: Cutive;
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+    
+    .skill-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 14px;
+      
+    }
+    
+    .skill-icon {
+      margin-right: 8px;
+      color: #000000;
+    }
+    
+    .skill-name {
+      font-weight: 400;
+      font-family: Poppins;
+      color: #f4f4f4;
+      font-size: 14px;
+    }
+    
+    figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    figure img {
+      width: 350px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    /*Footer Stlying*/
+  footer {
+    background-color: #212121;
+    padding:5px 5px;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    
+    }
+    .footer-section{
+    max-width: 300px;
+    margin: 0 auto;
+    }
+    .social-heading {
+    color: #d1d1d1;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: Chewy;
+    font-weight: 400;
+    }
+    
+    .social-links ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+    }
+    
+    .social-link {
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+    }
+    
+    .social-link:hover {
+    color: #e86b11;
+    }
+    
+    .footer-text p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #f4f4f4;
+    font-weight: 500;
+    font-family: Popins;
+    }
+    p .quote {
+    font-family: Sriracha;
+    font-size: 14px;
+    }
+  /* Mobile Landscape*/
+
+@media (orientation: landscape) and (max-width: 932px){
+  .nav-container {
+    height: 62%;
+  }
+  main{
+  padding: 10px 40px;
+  }
+  .skills-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .page-title {
+    margin-bottom: 10px;
+  }
+  .skill-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 20px;
+  }
+  figure img {
+    max-width: 400px;
+    height: 200px;
+  }
+  /*Footer Styling*/
+  footer {
+    height:auto;
+    padding: 5px 0 10px;
+  }
+  .footer-section{
+    max-width: 500px;
+    margin: 0 auto;
+    }
+  .social-heading {
+  margin-bottom: 5px;
+  }
+  .footer-text {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  }
+}
+/*Tablet Portrait*/
+@media (orientation: portrait) and (min-width:933px) and (max-width: 1439px) {
+  /*Header Styling*/
+  header {
+    padding: 15px 40px;
+  }
+  .title-name {
+    font-size: 32px;
+    font-family: "Dancing Script", cursive;
+  }
+
+  .nav-toggle {
+    font-size: 36px;
+  }
+  .nav-container {
+    height: 30%;
+  }
+  .nav-container.active {
+    right: 0;
+  }
+  .nav-list {
+    list-style: none;
+    padding: 10px 0 5px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-list-item {
+    margin: 40px 0;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+  
+  /*Main Styling*/
+
+  main {
+    margin-top: 80px;
+  }
+  .skills-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .page-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .skill-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 20px;
+  }
+  figure img {
+    max-width: 400px;
+    height: 200px;
+  }
+  .skill-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .skill-icon {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .skill-item{
+    padding-bottom: 15px;
+  }
+  .skill-name {
+   font-size: 16px;
+  }
+  
+  /*Footer Styling*/
+
+ 
+  footer {
+    height: auto;
+    padding: 5px 0 10px;
+  }
+  .footer-section {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .social-heading {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .footer-text {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer-text p {
+    margin: 10px 10px;
+    font-size: 16px;
+  }
+  p .quote {
+    font-size: 16px;
+  }
+
+}
+/*Tablet Landscape*/
+@media (orientation: landscape) and (min-width: 933px) and (max-width: 1439px) {
+  header {
+    padding: 15px 40px;
+  }
+  /*Header Styling*/
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+    padding: 20px 40px;
+  }
+  .title-name {
+    font-size: 30px;
+  }
+  .site-logo {
+    margin-right: 5px;
+  }
+  .site-logo img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  .nav-container {
+    right: 0;
+    height: 0;
+    width: 40%;
+    padding: 5px;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+  }
+  .nav-list-item {
+    padding-right: 15px;
+    margin: 25px 25px;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+  .nav-link.active {
+    color: #ef741b;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  /*Main Styling*/
+  main {
+    padding: 25px 40px;
+    margin-top: 100px;
+  }
+  .page-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .skills-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .skill-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 20px;
+  }
+  figure img {
+    width: 400px;
+    height: 300px;
+  }
+  .skill-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .skill-icon {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .skill-item{
+    padding-bottom: 15px;
+  }
+  .skill-name {
+   font-size: 16px;
+  }
+  
+  /*Footer Styling*/
+  footer {
+    height: auto;
+    padding: 5px 0 10px;
+  }
+  .footer-section {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .social-heading {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .footer-text {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer-text p {
+    margin: 10px 10px;
+    font-size: 16px;
+  }
+  p .quote {
+    font-size: 16px;
+  }
+
+}
+/*Desktop*/
+@media (min-width: 1440px) {
+  /*Header Styling*/
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+    padding: 10px 50px;
+  }
+  .title-name {
+    font-size: 30px;
+  }
+  .site-logo {
+    margin-right: 5px;
+  }
+  .site-logo img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  .nav-container {
+    right: 0;
+    width: 40%;
+    height: 0;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+  }
+  .nav-list-item {
+    padding-right: 15px;
+    margin: 25px 25px;
+  }
+  .nav-link {
+    color: #ffffff;
+    transition: color 0.3s;
+    font-size: 18px;
+  }
+  .nav-link.active {
+    color: #ef741b;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  /* Main Styling*/
+
+ main{
+  padding:20px 60px ;
+  margin-top: 100px;
+}
+.page-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.skills-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.skill-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  align-items: center;
+  gap: 20px;
+}
+figure img {
+  width: 500px;
+  height: 200px;
+}
+.skill-title {
+  font-size: 22px;
+  margin-bottom: 30px;
+  line-height: 32px;
+}
+.skill-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.skill-item{
+  padding-bottom: 15px;
+}
+.skill-name {
+ font-size: 18px;
+ line-height: 32px;
+}
+/*Footer Styling*/
+
+footer {
+  height: auto;
+  padding: 5px 0 10px;
+}
+.footer-section {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.social-heading {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.social-links ul {
+  gap: 30px;
+}
+.footer-text {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-text p {
+  margin: 10px 10px;
+  font-size: 16px;
+}
+p .quote {
+  font-size: 16px;
+}
+
+}
