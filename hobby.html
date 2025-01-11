@@ -3,24 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hobby</title>
+    <title>Naomi Meseret -Software Enginner</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/hobbypage.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Cutive&family=Dancing+Script:wght@700&family=Chivo:ital,wght@0,900;1,900&family=Roboto&family=Chewy&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <figure class="site-logo">
-        <a href="index.html"
-          ><img
-            src="images/logo.jpeg"
-            alt=" Naomi Meseret Logo"
-            width="50"
-            class="logo"
-        /></a>
-      </figure>
-      <h1 class="title-name">Naomi Meseret</h1>
+      <div>
+        <figure class="site-logo">
+          <a href="index.html"
+            ><img
+              src="images/logo.jpeg"
+              alt=" Naomi Meseret Logo"
+              width="50"
+              class="logo"
+          /></a>
+        </figure>
+        <p class="title-name"><span class="orange-word">N</span>aomi Meseret</p>
+      </div>
       <button class="nav-toggle">
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -46,8 +53,8 @@
     </header>
     <main>
       <section class="hobby-section">
-        <h2 class="page-title">Hobby</h2>
-        <article class="hobby-music">
+        <h1 class="page-title"> <span class="orange-word">H</span>obby</h1>
+        <article class="hobby">
           <h3 class="hobby-title">Music</h3>
           <div class="music-content">
             <audio controls>
@@ -67,7 +74,7 @@
           </div>
         </article>
 
-        <article class="hobby-travel">
+        <article class="hobby">
           <h3 class="hobby-title">Travel</h3>
           <div class="travel-content">
             <p class="travel-description">
@@ -103,10 +110,10 @@
             </table>
           </div>
         </article>
-        <article class="hobby-movie">
+        <article class="hobby">
           <h3 class="hobby-title">Movie</h3>
           <div class="movie-content">
-            <video width="400" controls>
+            <video controls>
               <source
                 src="video/The_pursuit_of_happiness_movie_trailer.mp4"
                 type="video/mp4"
@@ -161,5 +168,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

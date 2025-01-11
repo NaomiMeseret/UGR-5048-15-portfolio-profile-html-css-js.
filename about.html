@@ -3,24 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Naomi Meseret -Software Enginner</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/aboutpage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Cutive&family=Dancing+Script:wght@700&family=Chivo:ital,wght@0,900;1,900&family=Roboto&family=Chewy&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <figure class="site-logo">
-        <a href="index.html"
-          ><img
-            src="images/logo.jpeg"
-            alt=" Naomi Meseret Logo"
-            width="50"
-            class="logo"
-        /></a>
-      </figure>
-      <h1 class="title-name">Naomi Meseret</h1>
+      <div>
+        <figure class="site-logo">
+          <a href="index.html"
+            ><img
+              src="images/logo.jpeg"
+              alt=" Naomi Meseret Logo"
+              width="50"
+              class="logo"
+          /></a>
+        </figure>
+        <p class="title-name"><span class="orange-word">N</span>aomi Meseret</p>
+      </div>
       <button class="nav-toggle">
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -46,11 +53,12 @@
     </header>
     <main>
       <section class="about-container">
-        <h2 class="about-title">About</h2>
+        <h1 class="about-title"> <span class="orange-word">A</span>bout</h1>
         <figure class="about-image-wrapper">
-          <img src="images/about_img1.jpeg" alt="photo of Naomi" width="200" />
+          <img src="images/about_img1.jpeg" alt="photo of Naomi"  />
         </figure>
         <article class="about-content">
+          <div>
           <h4 class="about-subtitle">NAOMI MESERET</h4>
           <p class="about-description">
             I am a third-year Software Engineering student at Addis Ababa
@@ -65,6 +73,7 @@
             is to use my skills to create solutions that make a positive impact
             and help tackle real-world challenges in Africa.
           </p>
+        </div>
           <div class="about-btns">
             <a href="education.html" class="btn">Education</a>
             <a href="hobby.html" class="btn">Hobby</a>
@@ -102,11 +111,13 @@
           </ul>
         </nav>
         <div class="footer-text">
-          <p>&copy;2024</p>
-          <p>All rights reserved.</p>
-          <p>Fueled by passion, Guided by love.</p>
+          
+          <p>&copy;2024 All rights reserved.</p>
+        
+          <p class="quote">Fueled by passion, Guided by love.</p>
         </div>
       </section>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
